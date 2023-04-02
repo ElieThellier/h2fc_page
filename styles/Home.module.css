@@ -1,0 +1,137 @@
+.main {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 1rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #283555;
+}
+
+.header {
+    display: flex;
+    flex: 1;
+    background-color: #eee;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.bar {
+    margin-left: 40px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: #1f8ccc;
+    color: #eee;
+    font-size: 0.6rem;
+    transform: skewX(-30deg);
+}
+
+.buttons {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    transform: skewX(30deg);
+    text-align: center;
+    position: relative;
+}
+
+.bar:hover,
+.bar:focus,
+.bar:active {
+    background-color: #283555;
+    color: #eee;
+}
+
+.footer {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #283555;
+    color: #eee;
+}
+
+.noms {
+    color: #1f8ccc;
+    font-weight: 800;
+}
+
+.title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 3rem;
+    text-align: center;
+    color: #eee;
+    font-weight: 800;
+}
+
+.sous_title {
+    text-align: center;
+    color: #1f8ccc;
+    font-weight: 800;
+}
+
+.card_desc {
+    color: #eee;
+}
+
+.description {
+    text-align: left;
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: #eeeeee;
+}
+
+.card {
+    margin: 3rem 0 0.5rem 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 500px;
+    align-self: center;
+    background-color: #394666;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+    color: #0070f3;
+    border-color: #0070f3;
+}
+
+.card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.logo {
+    height: 1em;
+    margin-left: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    .card,
+    .footer {
+        border-color: #222;
+    }
+    .logo img {
+        filter: invert(1);
+    }
+}
