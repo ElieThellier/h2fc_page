@@ -8,13 +8,13 @@ Chart.register(CategoryScale);
 import styles from "../styles/System.module.css";
 import NoSsr from "../components/NoSsr.js";
 import clientPromise from "../lib/mongodb";
-import { SerialPort } from "serialport";
+/* import { SerialPort } from "serialport";
 import { ReadlineParser } from "@serialport/parser-readline";
 const port = new SerialPort({
     path: "COM3",
     baudRate: 9600,
 });
-const parser = port.pipe(new ReadlineParser({ delimiter: "\n" }));
+const parser = port.pipe(new ReadlineParser({ delimiter: "\n" })); */
 
 const data_line = {
     labels: ["January", "February", "March", "April", "May", "June", "July"],
@@ -80,9 +80,6 @@ export default function System({ datas }: any) {
             SYSTEM
             <br />
             <Link href="/">Back to home</Link>
-            <br />
-            &quot;// TO DO : connect to Arduino to get data&quot;
-            <br />
             <div className={styles.wrapper}>
                 <div className={styles.one}>
                     <h2>Main variables</h2>
@@ -161,7 +158,7 @@ export default function System({ datas }: any) {
     );
 }
 
-export async function updateDB() {
+/* export async function updateDB() {
     try {
         const client = await clientPromise;
         const db = client.db("dhtTemp");
@@ -184,7 +181,7 @@ export async function updateDB() {
     } catch (e) {
         console.error(e);
     }
-}
+} */
 
 export async function getServerSideProps() {
     try {
@@ -205,7 +202,7 @@ export async function getServerSideProps() {
     }
 }
 
-export async function resetDB() {
+/* export async function resetDB() {
     try {
         const client = await clientPromise;
         const db = client.db("dhtTemp");
@@ -215,4 +212,4 @@ export async function resetDB() {
     } catch (e) {
         console.error(e);
     }
-}
+} */
