@@ -12,8 +12,9 @@
         "child_process": "^1.0.2",
         "gcp-metadata": "^5.2.0",
         "kerberos": "^2.0.1",
-        "mongodb": "^4.8.1",
+        "mongodb": "^4.14.0",
         "mongodb-client-encryption": "^2.7.1",
+        "mqtt": "^4.3.7",
         "next": "latest",
         "react": "^18.2.0",
         "react-chartjs-2": "^5.2.0",
@@ -37,5 +38,6 @@
         "tls": false,
         "dgram": false,
         "dns": false
-    }
+    },
+    "type": "module"
 }
